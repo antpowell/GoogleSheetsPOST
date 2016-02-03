@@ -5,9 +5,8 @@
 (function(){
     var data ={};
 
-
-
     $('#form-modal').on('click', function(event){
+    //---------->enable modal<-----------
         $('#formModal').modal('toggle');
         $('#saveData').on('click',function(){
             var fName = $.trim($('#firstName').val());
@@ -37,7 +36,8 @@
             /*
                     VALIDATE USER INPUT FIELD DATA
             */
-            validation(data) ? postContactToGoogle(data) : alert("Validation Error. All fields all required!");
+            validation(data) ?  postContactToGoogle(data) : alert("Validation Error. All fields all required!");
+
         });
     });
     var validation = function(fields){
@@ -68,17 +68,28 @@
                 0: function (){
 
                     //Clean up for formData.firstName;
+                    $('#firstName').val("");
                     //Clean up for formData.lastName;
+                    $('#lastName').val("");
                     //Clean up for formData.emailAddress;
+                    $('#email').val("");
                     //Success message
-                    console.log("status:0 Success!!")
+                    console.log("status:0 Success!!");
+                    //close modal after success
+                    $('#formModal').modal('toggle');
+                    //window.location.href = $('#form-modal').attr('href');
                 },
                 200: function (){
                     //Clean up for formData.firstName;
+                    $('#firstName').val("");
                     //Clean up for formData.lastName;
+                    $('#lastName').val("");
                     //Clean up for formData.emailAddress;
-                    //Success Message
-                    console.log("status:200 Success!!")
+                    $('#email').val("");
+                    //Success message
+                    console.log("status:200 Success!!");
+                    //close modal after success
+                    $('#formModal').modal('toggle');
                 }
             }
         });
