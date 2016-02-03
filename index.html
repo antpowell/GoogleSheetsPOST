@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactFormApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script scr="node_modules/angular/angular.min.js"></script>
+    <script scr="node_modules/angular-route/angular-route.min.js"></script>
+    <script scr="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="btnHelper.css">
+
+
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="formModalLabel">HPPCC Connects</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                        <form action="https://docs.google.com/forms/d/17zWfo4sS5_uKitrrwoLCda7fxwvYm9kHjFBBJmGmUhA/formResponse" target="_self" method="POST" id="mG61Hd" role="form">
+                            <h2>Stay Informed
+                                <small>with HPPCC</small>
+                            </h2>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" id="firstName"
+                                               placeholder="First Name" name="entry.1490454186">
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" id="lastName"
+                                               placeholder="Last Name" name="entry.794182634">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-lg" id="email"
+                                       placeholder="Email Address" name="entry.1472414226">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="button btn-push btn-default" data-dismiss="modal">Close</a>
+                <a type="submit" class="button btn-push btn-purple" id="saveData">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a class="button btn-push btn-purple" id="form-modal" data-toggle="formModal">Form Modal</a> /*
+href="http://sites.tsu.edu/cophs-kiosk/" data-target="#formModal"*/
+<div ui-view></div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script src="app/app.js"></script>
+<script src="./formModal.js"></script>
+
+</body>
+</html>
