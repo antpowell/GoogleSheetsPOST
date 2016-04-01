@@ -9,7 +9,7 @@ a.button {
     text-align: center;
     line-height: 50px;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.1s ;
     left: 50%;
     text-decoration: none;
@@ -22,22 +22,22 @@ a.button {
     background: #A74982;
 }
 .btn-push:hover{
-    margin-top:15px;
-    margin-bottom: 5px;
+    margin-top: 13px;
+    margin-bottom: 3px;
 }
 a.button.btn-default{
     color: #0f0f0f;
 }
 
 .btn-default.btn-push{
-    box-shadow: 0 5px 0 0 #E4E4E4;
+    box-shadow: 0 3px 0 0 #E4E4E4;
 }
 .btn-default.btn-push:hover{
     box-shadow: 0 0 0 0 #E4E4E4;
     color: #621643;
 }
 .btn-purple.btn-push{
-     box-shadow: 0 5px 0 0 #6D184B;
+     box-shadow: 0 3px 0 0 #6D184B;
  }
 .btn-purple.btn-push:hover{
     box-shadow: 0 0 0 0 #6D184B;
